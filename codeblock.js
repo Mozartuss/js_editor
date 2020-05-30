@@ -62,6 +62,9 @@
           if (this.options.resetable) {
             this.createResetButton();
           }
+            var wrapper = document.getElementsByClassName("codeblock-editor-wrapper");
+            wrapper.height = document.getElementsByClassName("ace_editor").height
+
 		  this.base.data("plugin_" + pluginName, this);
         },
 
@@ -77,7 +80,8 @@
             //TODO: make this configurable
             //var width = this.original.width();
             //this.el.width(width);
-            inner.height(this.original.height() + 12 );
+            inner.height(this.original.height() + 8 );
+
 
             //Strip whitespace to make writing html easier
             this.base.html($.trim(this.base.html()));
@@ -90,6 +94,8 @@
             inner.append(this.base);
 			this.original.remove();
         },
+
+
 
         setUpEditor: function() {
             //Set up ace editor - requires an ID to latch on to
