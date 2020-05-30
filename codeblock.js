@@ -77,7 +77,7 @@
             //TODO: make this configurable
             //var width = this.original.width();
             //this.el.width(width);
-            inner.height(this.original.height() + 8 );
+            inner.height(this.original.height() + 12 );
 
             //Strip whitespace to make writing html easier
             this.base.html($.trim(this.base.html()));
