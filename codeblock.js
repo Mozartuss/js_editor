@@ -62,10 +62,6 @@
           if (this.options.resetable) {
             this.createResetButton();
           }
-            var wrapper = $(".codeblock-editor-wrapper");
-            var a_ed = $(".ace_editor").height();
-            wrapper.style.height = a_ed
-
 		  this.base.data("plugin_" + pluginName, this);
         },
 
