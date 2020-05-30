@@ -63,7 +63,8 @@
             this.createResetButton();
           }
             var wrapper = document.getElementsByClassName("codeblock-editor-wrapper");
-            wrapper.height = document.getElementsByClassName("ace_editor").height
+            var a_ed = document.getElementsByClassName("ace_editor").getBoundingClientRect().height
+            wrapper.style.height = a_ed
 
 		  this.base.data("plugin_" + pluginName, this);
         },
